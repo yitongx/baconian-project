@@ -54,7 +54,7 @@ examples:
     # First argument is key you want to set, e.g., DEFAULT_LOG_PATH
     # Second argument is the value.
     GlobalConfig().set('DEFAULT_LOG_PATH', './log_path')
-    single_exp_runner(task_fn, del_if_log_path_existed=True)
+    single_exp_runner(your_function, del_if_log_path_existed=True)
 
 
 During the time task is running, the global configuration will be frozen, if you try to change it, an error will be
